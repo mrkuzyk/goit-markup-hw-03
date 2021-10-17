@@ -30,6 +30,13 @@ body {
   color: #212121;
 }
 
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -68,8 +75,24 @@ body {
 
 /* --------------меню----------------- */
 
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav .menu-link.curent {
   color: var(--accent-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -80,10 +103,19 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 93px;
+}
+
+.menu-list {
+  display: flex;
 }
 
 .header-logo-second {
   color: black;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu-link {
@@ -97,6 +129,15 @@ body {
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
+}
+
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-tel {
