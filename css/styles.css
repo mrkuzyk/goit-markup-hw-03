@@ -422,6 +422,14 @@ header {
   margin-left: 30px;
 }
 
+.project-blok {
+  padding: 20px 24px;
+  background-color: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .project-caption {
   font-weight: bold;
   font-size: 18px;
