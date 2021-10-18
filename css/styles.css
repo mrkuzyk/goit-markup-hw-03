@@ -4,6 +4,7 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --page-background-color: #2f303a;
 }
 
 p,
@@ -169,7 +170,7 @@ header {
 /* --------------герой----------------- */
 
 .hero {
-  background-color: var(--title-color);
+  background-color: var(--page-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -218,14 +219,14 @@ header {
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .benefits-item {
   flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
   margin-left: 30px;
-  margin-bottom: 30px;
 }
 
 .ben-caption {
@@ -261,14 +262,14 @@ header {
 .than-we-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .than-photo {
   flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
   margin-left: 30px;
-  margin-bottom: 30px;
 }
 
 /* --------------наша команда----------------- */
@@ -285,21 +286,23 @@ header {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .about-team {
   flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
   margin-left: 30px;
-  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-photo {
-  margin-bottom: 30px;
+.team-blok {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
 }
 
 .team-caption {
@@ -319,13 +322,12 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 30px;
 }
 
 /* --------------футер----------------- */
 
 .footers {
-  background-color: var(--primary-text-color);
+  background-color: var(--page-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -339,12 +341,12 @@ header {
   color: var(--accent-color);
 }
 
-.footer-adress-blok {
-  margin-top: 20px;
-}
-
 .footer-logo-second {
   color: white;
+}
+
+.footer-adress-blok {
+  margin-top: 20px;
 }
 
 .footer-adress {
@@ -371,12 +373,8 @@ header {
   color: var(--accent-color);
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-item: last-child {
-  margin-bottom: 0;
 }
 
 /* --------------портфоліо проекти----------------- */
@@ -392,6 +390,10 @@ header {
   margin-bottom: 50px;
 }
 
+.project-menu-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .project-btn {
   font-family: inherit;
   font-style: normal;
@@ -401,9 +403,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-left: 22px;
-  padding-right: 22px;
-  margin-left: 8px;
+  padding: 6px 22px;
   background-color: #f5f4fa;
   border: 1px;
   border-radius: 4px;
@@ -412,20 +412,14 @@ header {
 .our-project-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
   margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .project-item {
   flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
   margin-left: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.project-link {
-  display: block;
-  margin-bottom: 20px;
 }
 
 .project-caption {
@@ -435,9 +429,6 @@ header {
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
-  width: 322px;
-  margin-right: 24px;
-  margin-left: 24px;
 }
 
 .project-text {
@@ -446,8 +437,4 @@ header {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  width: 322px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
 }
