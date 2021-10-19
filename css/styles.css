@@ -59,6 +59,12 @@ body {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .btn:hover,
 .btn:focus {
   color: #ffffff;
@@ -256,6 +262,7 @@ header {
 }
 
 .than-we-title {
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -277,9 +284,11 @@ header {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: #f5f4fa;
 }
 
 .team-title {
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
